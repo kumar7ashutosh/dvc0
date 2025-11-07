@@ -5,7 +5,7 @@ def create_dataframe()->pd.DataFrame:
     data={
         'id':[1,2,3,4,5,6,7,8,9,10],
         'review':[
-            'Great food and ambiance.',
+            'Great food and ambiance.v2',
             'Terrible services.',
             'Amazing experience!',
             'Food was cold.',
@@ -38,5 +38,5 @@ def process_data(k)->pd.DataFrame:
 if __name__=='__main__':
     df=create_dataframe()
     save_dataframe(df)
-    new_df=process_data(k=3)
-    
+    new_df=process_data(k=5)
+    print(new_df.shape)
